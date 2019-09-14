@@ -35,6 +35,14 @@ export default {
     color: #e9425c;
   }
 
+  .gray-color {
+    color: #969696;
+  }
+
+  .gray-2-color {
+    color: #6c6c6c;
+  }
+
   /* background */
   .red-bg {
     background: #e9425c;
@@ -46,5 +54,9 @@ export default {
 
   .gray-bg {
     background: #969696;
+  }
+
+  .grey-bg {
+    background: #f2f2f2;
   }
 </style>
