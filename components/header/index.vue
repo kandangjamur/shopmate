@@ -67,7 +67,7 @@
     <div class="header-bottom black-bg">
       <div class="wrapper flex justify-between py-4">
         <div class="nav-item brand items-center">
-          <h2 class="red-color font-bold text-2xl">
+          <h2 class="red-color font-bold text-2xl mt-1">
             <ButtonLink
               to="/"
               label="S H O P M A T E"

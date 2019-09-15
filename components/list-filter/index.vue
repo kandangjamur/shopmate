@@ -1,5 +1,7 @@
 <template>
-  <div class="shop-filter"></div>
+  <div class="shop-filter">
+    Filter
+  </div>
 </template>
 
 <script>
