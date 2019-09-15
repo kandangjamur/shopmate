@@ -52,8 +52,47 @@
       </section>
 
       <!-- section ads -->
-      <section class="promo mt-6">
+      <section class="promo relative mt-6">
+        <div class="content flex justify-start flex-wrap">
+          <div class="title w-full">
+            <h1 class="font-bold font-playfair text-6xl text-white">
+              Converse
+            </h1>
+          </div>
+
+          <div class="sub-title">
+            <h2 class="text-4xl text-white font-bold">
+              Explore styles tough enough to
+            </h2>
+
+            <h2 class="text-4xl text-white font-bold">
+              handle all your workouts
+            </h2>
+
+            <div class="button mt-3">
+              <ButtonBase
+                label="Shop Brand"
+                color="#e9425c"
+                background="#ffffff"
+              />
+            </div>
+          </div>
+        </div>
       </section>
+    </div>
+
+    <div class="newsletter grey-2-bg py-4">
+      <div class="wrapper flex items-center justify-between">
+        <h4 class="font-bold text-lg">SUBSCRIBE FOR SHOP NEWS, UPDATES AND SPECIAL OFFERS</h4>
+        <form class="news-input flex items-center">
+          <div class="item pr-2">
+            <NewsLetterInput />
+          </div>
+          <div class="item">
+            <ButtonBase label="Subscribe" />
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -61,10 +100,14 @@
 <script>
 import ComponentFilter from '@/components/list-filter'
 import CardItem from '@/components/card'
+import NewsLetterInput from '@/components/input/newsletter'
+import ButtonBase from '@/components/button/base'
 export default {
   components: {
     ComponentFilter,
-    CardItem
+    CardItem,
+    NewsLetterInput,
+    ButtonBase
   },
   head () {
     return {
@@ -86,6 +129,32 @@ export default {
   background: url(../assets/images/images-shoe2.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.promo::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.38;
+}
+
+.promo .content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 100px;
+}
+
+.promo h1 {
+  letter-spacing: 3px;
+}
+
+.promo h2 {
+  letter-spacing: 2px;
 }
 
 .shop-listing .item:not(:nth-child(3n+0)) {
