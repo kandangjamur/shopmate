@@ -10,7 +10,7 @@
     >
       {{ count }}
     </div>
-    <img :src="handleImage" alt="Cart Icon">
+    <img :src="handleImage" alt="Cart Image">
   </div>
 </template>
 
