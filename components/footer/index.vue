@@ -84,4 +84,9 @@ export default {
   max-width: 50%;
   margin: auto;
 }
+.social-item img:hover {
+  background: #e9425c;
+  border-radius: 50%;
+  overflow: hidden;
+}
 </style>
